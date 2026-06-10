@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+     int count = 0, i, j, factors;
+     for(i=1; i <= 9; i++)
+     {
+          factors = 0;
+          for(j = 1; j <= i; j++)
+          {
+               if(i % j == 0)
+               factors++;
+          }
+          if(factors == 2)
+          count++;
+     }
+printf("Single-digit prime numbers : %d", count);
+}
